@@ -1,0 +1,12 @@
+
+
+
+syntax: glob
+obj
+bin
+README.html
+*.swp
+
+syntax: regexp
+
+
