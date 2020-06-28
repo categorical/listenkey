@@ -1,0 +1,14 @@
+
+
+
+syntax: glob
+obj
+bin
+README.html
+*.swp
+.git
+
+
+syntax: regexp
+
+
