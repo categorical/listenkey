@@ -1,12 +1,12 @@
 
-###`Alt` `F......n` `Ctrl`
+### `Alt` `F......n` `Ctrl`
 
-My `Logitech K345` keyboard has a `Fn` key. 
-The key makes itself look like a very important and successful key,
-by expanding its size and then placing itself in between the right `Alt` and `Ctrl` keys.
+`Logitech K345` keyboard has a fat `Fn` key that I want to gouge out!
+It is in between the right `Alt` and `Ctrl` keys.
+It is triple sized and worthless.
 
 The assumed plan was to remap that `Fn` key to a missing right `Meta` key.
-This however, might not be possible as the `Fn` key is private to the keyboard (this external keyboard), i.e. it causes the keyboard to send altered scancodes when other keys are pressed, but does not send a scancode for itself.
+That however, might not be possible as the `Fn` key is private to the keyboard (this external keyboard), i.e. it causes the keyboard to send altered scancodes when other keys are pressed, but does not send a scancode for itself.
 
 This program, as a result, creates global keyboard hooks, but remains passive. 
 It can be used to detect keyboard events, though:
@@ -14,19 +14,19 @@ It can be used to detect keyboard events, though:
   * `CGEvent`'s at the `Quartz` window system layer,
   * `IOHIDManager` events at the kernel devices layer.
 
-###Installation
+### Installation
 
 ```
 make build
 ```
 An executable `listenkey` will be placed into a `bin` folder inside the program directory.
 
-###Usage
+### Usage
 
 * `listenkey --scancode` listens for scancodes the keyboard sends to the OS.
 * `listenkey --keycode` listens for virtual key codes for keystrokes the window system dispatches.
 
-###Answering to the remapping problem
+### Answering to the remapping problem
 
 Mapping the `Fn` key of an external keyboard might not be possible by software.
 To map other keys, `macOS` has `hidutil` command;
