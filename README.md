@@ -8,7 +8,7 @@ It is triple sized and worthless.
 The assumed plan was to remap that `Fn` key to a missing right `Meta` key.
 That however, might not be possible as the `Fn` key is private to the keyboard (this external keyboard), i.e. it causes the keyboard to send altered scancodes when other keys are pressed, but does not send a scancode for itself.
 
-This program, as a result, creates global keyboard hooks, but remains passive. 
+This program, as a result, creates global keyboard hooks, but stops there. 
 It can be used to detect keyboard events, though:
   
   * `CGEvent`'s at the `Quartz` window system layer,
