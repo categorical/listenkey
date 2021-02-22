@@ -1,15 +1,10 @@
 
 ### `Alt` `F......n` `Ctrl`
 
-`Logitech K345` keyboard has a fat `Fn` key that I want to gouge out!
-It is in between the right `Alt` and `Ctrl` keys.
-It is triple sized and worthless.
-
-The assumed plan was to remap that `Fn` key to a missing right `Meta` key.
+The assumed plan was to remap a triple sized `Fn` key of a `Logitech K345` keyboard to a missing `Meta` key.
 That however, might not be possible as the `Fn` key is private to the keyboard (this external keyboard), i.e. it causes the keyboard to send altered scancodes when other keys are pressed, but does not send a scancode for itself.
 
-This program, as a result, creates global keyboard hooks, but stops there. 
-It can be used to detect keyboard events, though:
+This is a toy program that creates global keyboard hooks, and can be used to detect keyboard events for reference:
   
   * `CGEvent`'s at the `Quartz` window system layer,
   * `IOHIDManager` events at the kernel devices layer.
